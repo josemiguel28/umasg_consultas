@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fa5d0de65079143d47fe115c618277ee",
+    "content-hash": "e5137d816a4c4861b886468b790d7b08",
     "packages": [
         {
             "name": "brick/math",
@@ -213,6 +213,83 @@
                 }
             ],
             "time": "2024-11-12T16:29:46+00:00"
+        },
+        {
+            "name": "composer/semver",
+            "version": "3.4.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/semver.git",
+                "reference": "198166618906cb2de69b95d7d47e5fa8aa1b2b95"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/semver/zipball/198166618906cb2de69b95d7d47e5fa8aa1b2b95",
+                "reference": "198166618906cb2de69b95d7d47e5fa8aa1b2b95",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.2 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.11",
+                "symfony/phpunit-bridge": "^3 || ^7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Semver\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nils Adermann",
+                    "email": "naderman@naderman.de",
+                    "homepage": "http://www.naderman.de"
+                },
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                },
+                {
+                    "name": "Rob Bast",
+                    "email": "rob.bast@gmail.com",
+                    "homepage": "http://robbast.nl"
+                }
+            ],
+            "description": "Semver library that offers utilities, version constraint parsing and validation.",
+            "keywords": [
+                "semantic",
+                "semver",
+                "validation",
+                "versioning"
+            ],
+            "support": {
+                "irc": "ircs://irc.libera.chat:6697/composer",
+                "issues": "https://github.com/composer/semver/issues",
+                "source": "https://github.com/composer/semver/tree/3.4.4"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-08-20T19:15:30+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -587,6 +664,67 @@
                 }
             ],
             "time": "2025-03-06T22:45:56+00:00"
+        },
+        {
+            "name": "ezyang/htmlpurifier",
+            "version": "v4.18.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezyang/htmlpurifier.git",
+                "reference": "cb56001e54359df7ae76dc522d08845dc741621b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/cb56001e54359df7ae76dc522d08845dc741621b",
+                "reference": "cb56001e54359df7ae76dc522d08845dc741621b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~5.6.0 || ~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
+            },
+            "require-dev": {
+                "cerdic/css-tidy": "^1.7 || ^2.0",
+                "simpletest/simpletest": "dev-master"
+            },
+            "suggest": {
+                "cerdic/css-tidy": "If you want to use the filter 'Filter.ExtractStyleBlocks'.",
+                "ext-bcmath": "Used for unit conversion and imagecrash protection",
+                "ext-iconv": "Converts text to and from non-UTF-8 encodings",
+                "ext-tidy": "Used for pretty-printing HTML"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "library/HTMLPurifier.composer.php"
+                ],
+                "psr-0": {
+                    "HTMLPurifier": "library/"
+                },
+                "exclude-from-classmap": [
+                    "/library/HTMLPurifier/Language/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Edward Z. Yang",
+                    "email": "admin@htmlpurifier.org",
+                    "homepage": "http://ezyang.com"
+                }
+            ],
+            "description": "Standards compliant HTML filter written in PHP",
+            "homepage": "http://htmlpurifier.org/",
+            "keywords": [
+                "html"
+            ],
+            "support": {
+                "issues": "https://github.com/ezyang/htmlpurifier/issues",
+                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.18.0"
+            },
+            "time": "2024-11-01T03:51:45+00:00"
         },
         {
             "name": "fruitcake/php-cors",
@@ -2090,16 +2228,16 @@
         },
         {
             "name": "livewire/flux",
-            "version": "v2.3.1",
+            "version": "v2.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/flux.git",
-                "reference": "d76c702806f48b75427226a81ffdbfb1d2b1b47d"
+                "reference": "e0704b125d5f9544aa32e0cfccb11baaf44d77a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/flux/zipball/d76c702806f48b75427226a81ffdbfb1d2b1b47d",
-                "reference": "d76c702806f48b75427226a81ffdbfb1d2b1b47d",
+                "url": "https://api.github.com/repos/livewire/flux/zipball/e0704b125d5f9544aa32e0cfccb11baaf44d77a0",
+                "reference": "e0704b125d5f9544aa32e0cfccb11baaf44d77a0",
                 "shasum": ""
             },
             "require": {
@@ -2150,9 +2288,9 @@
             ],
             "support": {
                 "issues": "https://github.com/livewire/flux/issues",
-                "source": "https://github.com/livewire/flux/tree/v2.3.1"
+                "source": "https://github.com/livewire/flux/tree/v2.3.2"
             },
-            "time": "2025-09-05T03:49:53+00:00"
+            "time": "2025-09-08T01:11:34+00:00"
         },
         {
             "name": "livewire/livewire",
@@ -2301,6 +2439,87 @@
                 "source": "https://github.com/livewire/volt"
             },
             "time": "2025-08-06T15:40:50+00:00"
+        },
+        {
+            "name": "maatwebsite/excel",
+            "version": "3.1.67",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SpartnerNL/Laravel-Excel.git",
+                "reference": "e508e34a502a3acc3329b464dad257378a7edb4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SpartnerNL/Laravel-Excel/zipball/e508e34a502a3acc3329b464dad257378a7edb4d",
+                "reference": "e508e34a502a3acc3329b464dad257378a7edb4d",
+                "shasum": ""
+            },
+            "require": {
+                "composer/semver": "^3.3",
+                "ext-json": "*",
+                "illuminate/support": "5.8.*||^6.0||^7.0||^8.0||^9.0||^10.0||^11.0||^12.0",
+                "php": "^7.0||^8.0",
+                "phpoffice/phpspreadsheet": "^1.30.0",
+                "psr/simple-cache": "^1.0||^2.0||^3.0"
+            },
+            "require-dev": {
+                "laravel/scout": "^7.0||^8.0||^9.0||^10.0",
+                "orchestra/testbench": "^6.0||^7.0||^8.0||^9.0||^10.0",
+                "predis/predis": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Excel": "Maatwebsite\\Excel\\Facades\\Excel"
+                    },
+                    "providers": [
+                        "Maatwebsite\\Excel\\ExcelServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Maatwebsite\\Excel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Patrick Brouwers",
+                    "email": "patrick@spartner.nl"
+                }
+            ],
+            "description": "Supercharged Excel exports and imports in Laravel",
+            "keywords": [
+                "PHPExcel",
+                "batch",
+                "csv",
+                "excel",
+                "export",
+                "import",
+                "laravel",
+                "php",
+                "phpspreadsheet"
+            ],
+            "support": {
+                "issues": "https://github.com/SpartnerNL/Laravel-Excel/issues",
+                "source": "https://github.com/SpartnerNL/Laravel-Excel/tree/3.1.67"
+            },
+            "funding": [
+                {
+                    "url": "https://laravel-excel.com/commercial-support",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/patrickbrouwers",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-08-26T09:13:16+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
@@ -2592,16 +2811,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "3.10.2",
+            "version": "3.10.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CarbonPHP/carbon.git",
-                "reference": "76b5c07b8a9d2025ed1610e14cef1f3fd6ad2c24"
+                "reference": "8e3643dcd149ae0fe1d2ff4f2c8e4bbfad7c165f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CarbonPHP/carbon/zipball/76b5c07b8a9d2025ed1610e14cef1f3fd6ad2c24",
-                "reference": "76b5c07b8a9d2025ed1610e14cef1f3fd6ad2c24",
+                "url": "https://api.github.com/repos/CarbonPHP/carbon/zipball/8e3643dcd149ae0fe1d2ff4f2c8e4bbfad7c165f",
+                "reference": "8e3643dcd149ae0fe1d2ff4f2c8e4bbfad7c165f",
                 "shasum": ""
             },
             "require": {
@@ -2619,13 +2838,13 @@
             "require-dev": {
                 "doctrine/dbal": "^3.6.3 || ^4.0",
                 "doctrine/orm": "^2.15.2 || ^3.0",
-                "friendsofphp/php-cs-fixer": "^3.75.0",
+                "friendsofphp/php-cs-fixer": "^v3.87.1",
                 "kylekatarnls/multi-tester": "^2.5.3",
                 "phpmd/phpmd": "^2.15.0",
                 "phpstan/extension-installer": "^1.4.3",
-                "phpstan/phpstan": "^2.1.17",
-                "phpunit/phpunit": "^10.5.46",
-                "squizlabs/php_codesniffer": "^3.13.0"
+                "phpstan/phpstan": "^2.1.22",
+                "phpunit/phpunit": "^10.5.53",
+                "squizlabs/php_codesniffer": "^3.13.4"
             },
             "bin": [
                 "bin/carbon"
@@ -2693,7 +2912,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-08-02T09:36:06+00:00"
+            "time": "2025-09-06T13:39:36+00:00"
         },
         {
             "name": "nette/schema",
@@ -2993,16 +3212,16 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "5.1.0",
+            "version": "1.30.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "fd26e45a814e94ae2aad0df757d9d1739c4bf2e0"
+                "reference": "2f39286e0136673778b7a142b3f0d141e43d1714"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/fd26e45a814e94ae2aad0df757d9d1739c4bf2e0",
-                "reference": "fd26e45a814e94ae2aad0df757d9d1739c4bf2e0",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/2f39286e0136673778b7a142b3f0d141e43d1714",
+                "reference": "2f39286e0136673778b7a142b3f0d141e43d1714",
                 "shasum": ""
             },
             "require": {
@@ -3020,25 +3239,25 @@
                 "ext-xmlwriter": "*",
                 "ext-zip": "*",
                 "ext-zlib": "*",
+                "ezyang/htmlpurifier": "^4.15",
                 "maennchen/zipstream-php": "^2.1 || ^3.0",
                 "markbaker/complex": "^3.0",
                 "markbaker/matrix": "^3.0",
-                "php": "^8.1",
+                "php": "^7.4 || ^8.0",
                 "psr/http-client": "^1.0",
                 "psr/http-factory": "^1.0",
                 "psr/simple-cache": "^1.0 || ^2.0 || ^3.0"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "dev-main",
-                "dompdf/dompdf": "^2.0 || ^3.0",
+                "dompdf/dompdf": "^1.0 || ^2.0 || ^3.0",
                 "friendsofphp/php-cs-fixer": "^3.2",
                 "mitoteam/jpgraph": "^10.3",
                 "mpdf/mpdf": "^8.1.1",
                 "phpcompatibility/php-compatibility": "^9.3",
-                "phpstan/phpstan": "^1.1 || ^2.0",
-                "phpstan/phpstan-deprecation-rules": "^1.0 || ^2.0",
-                "phpstan/phpstan-phpunit": "^1.0 || ^2.0",
-                "phpunit/phpunit": "^10.5",
+                "phpstan/phpstan": "^1.1",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^8.5 || ^9.0",
                 "squizlabs/php_codesniffer": "^3.7",
                 "tecnickcom/tcpdf": "^6.5"
             },
@@ -3093,9 +3312,9 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
-                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/5.1.0"
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/1.30.0"
             },
-            "time": "2025-09-04T05:34:49+00:00"
+            "time": "2025-08-10T06:28:02+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -7514,39 +7733,39 @@
         },
         {
             "name": "pestphp/pest",
-            "version": "v4.0.4",
+            "version": "v4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pestphp/pest.git",
-                "reference": "47fb1d77631d608022cc7af96cac90ac741c8394"
+                "reference": "b7406938ac9e8d08cf96f031922b0502a8523268"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pestphp/pest/zipball/47fb1d77631d608022cc7af96cac90ac741c8394",
-                "reference": "47fb1d77631d608022cc7af96cac90ac741c8394",
+                "url": "https://api.github.com/repos/pestphp/pest/zipball/b7406938ac9e8d08cf96f031922b0502a8523268",
+                "reference": "b7406938ac9e8d08cf96f031922b0502a8523268",
                 "shasum": ""
             },
             "require": {
-                "brianium/paratest": "^7.11.2",
+                "brianium/paratest": "^7.12.0",
                 "nunomaduro/collision": "^8.8.2",
                 "nunomaduro/termwind": "^2.3.1",
                 "pestphp/pest-plugin": "^4.0.0",
                 "pestphp/pest-plugin-arch": "^4.0.0",
                 "pestphp/pest-plugin-mutate": "^4.0.1",
-                "pestphp/pest-plugin-profanity": "^4.0.1",
+                "pestphp/pest-plugin-profanity": "^4.1.0",
                 "php": "^8.3.0",
-                "phpunit/phpunit": "^12.3.7",
-                "symfony/process": "^7.3.0"
+                "phpunit/phpunit": "^12.3.8",
+                "symfony/process": "^7.3.3"
             },
             "conflict": {
                 "filp/whoops": "<2.18.3",
-                "phpunit/phpunit": ">12.3.7",
+                "phpunit/phpunit": ">12.3.8",
                 "sebastian/exporter": "<7.0.0",
                 "webmozart/assert": "<1.11.0"
             },
             "require-dev": {
                 "pestphp/pest-dev-tools": "^4.0.0",
-                "pestphp/pest-plugin-browser": "^4.0.2",
+                "pestphp/pest-plugin-browser": "^4.1.0",
                 "pestphp/pest-plugin-type-coverage": "^4.0.2",
                 "psy/psysh": "^0.12.10"
             },
@@ -7614,7 +7833,7 @@
             ],
             "support": {
                 "issues": "https://github.com/pestphp/pest/issues",
-                "source": "https://github.com/pestphp/pest/tree/v4.0.4"
+                "source": "https://github.com/pestphp/pest/tree/v4.1.0"
             },
             "funding": [
                 {
@@ -7626,7 +7845,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-28T18:19:42+00:00"
+            "time": "2025-09-10T13:41:09+00:00"
         },
         {
             "name": "pestphp/pest-plugin",
@@ -7920,16 +8139,16 @@
         },
         {
             "name": "pestphp/pest-plugin-profanity",
-            "version": "v4.0.1",
+            "version": "v4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pestphp/pest-plugin-profanity.git",
-                "reference": "823d5d8ae07a265c70f5e1a9ce50639543b0bf11"
+                "reference": "e279c844b6868da92052be27b5202c2ad7216e80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pestphp/pest-plugin-profanity/zipball/823d5d8ae07a265c70f5e1a9ce50639543b0bf11",
-                "reference": "823d5d8ae07a265c70f5e1a9ce50639543b0bf11",
+                "url": "https://api.github.com/repos/pestphp/pest-plugin-profanity/zipball/e279c844b6868da92052be27b5202c2ad7216e80",
+                "reference": "e279c844b6868da92052be27b5202c2ad7216e80",
                 "shasum": ""
             },
             "require": {
@@ -7970,9 +8189,9 @@
                 "unit"
             ],
             "support": {
-                "source": "https://github.com/pestphp/pest-plugin-profanity/tree/v4.0.1"
+                "source": "https://github.com/pestphp/pest-plugin-profanity/tree/v4.1.0"
             },
-            "time": "2025-08-20T12:58:03+00:00"
+            "time": "2025-09-10T06:17:03+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -8316,16 +8535,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "12.3.6",
+            "version": "12.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "da2cdaff87220fa641e7652364281b736e4347e0"
+                "reference": "bbede0f5593dad37af3be6a6f8e6ae1885e8a0a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/da2cdaff87220fa641e7652364281b736e4347e0",
-                "reference": "da2cdaff87220fa641e7652364281b736e4347e0",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/bbede0f5593dad37af3be6a6f8e6ae1885e8a0a9",
+                "reference": "bbede0f5593dad37af3be6a6f8e6ae1885e8a0a9",
                 "shasum": ""
             },
             "require": {
@@ -8381,7 +8600,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
                 "security": "https://github.com/sebastianbergmann/php-code-coverage/security/policy",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/12.3.6"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/12.3.7"
             },
             "funding": [
                 {
@@ -8401,7 +8620,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-02T05:23:14+00:00"
+            "time": "2025-09-10T09:59:06+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -8650,16 +8869,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "12.3.7",
+            "version": "12.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "b8fa997c49682979ad6bfaa0d7fb25f54954965e"
+                "reference": "9d68c1b41fc21aac106c71cde4669fe7b99fca10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b8fa997c49682979ad6bfaa0d7fb25f54954965e",
-                "reference": "b8fa997c49682979ad6bfaa0d7fb25f54954965e",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/9d68c1b41fc21aac106c71cde4669fe7b99fca10",
+                "reference": "9d68c1b41fc21aac106c71cde4669fe7b99fca10",
                 "shasum": ""
             },
             "require": {
@@ -8673,7 +8892,7 @@
                 "phar-io/manifest": "^2.0.4",
                 "phar-io/version": "^3.2.1",
                 "php": ">=8.3",
-                "phpunit/php-code-coverage": "^12.3.3",
+                "phpunit/php-code-coverage": "^12.3.6",
                 "phpunit/php-file-iterator": "^6.0.0",
                 "phpunit/php-invoker": "^6.0.0",
                 "phpunit/php-text-template": "^5.0.0",
@@ -8683,7 +8902,7 @@
                 "sebastian/diff": "^7.0.0",
                 "sebastian/environment": "^8.0.3",
                 "sebastian/exporter": "^7.0.0",
-                "sebastian/global-state": "^8.0.0",
+                "sebastian/global-state": "^8.0.2",
                 "sebastian/object-enumerator": "^7.0.0",
                 "sebastian/type": "^6.0.3",
                 "sebastian/version": "^6.0.0",
@@ -8727,7 +8946,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/12.3.7"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/12.3.8"
             },
             "funding": [
                 {
@@ -8751,7 +8970,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-08-28T05:15:46+00:00"
+            "time": "2025-09-03T06:25:17+00:00"
         },
         {
             "name": "sebastian/cli-parser",

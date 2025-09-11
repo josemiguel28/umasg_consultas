@@ -1,7 +1,7 @@
 <?php
 
 use App\Livewire\Admin\Dashboard;
-use App\Livewire\Admin\FileUpload;
+use App\Livewire\Admin\ExcelUpload;
 use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
@@ -14,7 +14,7 @@ Route::get('/', function () {
 Route::middleware(['auth'])->group(function () {
 
     Route::get('dashboard', [Dashboard::class, 'render'])->name('dashboard');
-    Route::get('admin/upload', FileUpload::class)->name('admin.upload');
+    Route::get('admin/upload', ExcelUpload::class)->name('admin.upload');
 
     Route::redirect('settings', 'settings/profile');
 
