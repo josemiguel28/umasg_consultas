@@ -111,12 +111,19 @@
                                                 <span class="text-xs text-gray-500 dark:text-gray-400">
                                                     {{ $file->formatted_file_size }}
                                                 </span>
+                                                @if($file->file_path)
+                                                    <a href="{{ asset('storage/' . $file->file_path) }}" 
+                                                       target="_blank" 
+                                                       class="text-xs text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 underline">
+                                                        Descargar archivo
+                                                    </a>
+                                                @endif
                                             </div>
                                         </div>
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap">
                                         <span class="text-sm font-bold text-blue-600 dark:text-blue-400">
-                                            {{ number_format($file->records_imported) }}
+                                            {{ number_format($file->records_imported) }} registros
                                         </span>
                                     </td>
                                     <td class="px-6 py-4 whitespace-nowrap">

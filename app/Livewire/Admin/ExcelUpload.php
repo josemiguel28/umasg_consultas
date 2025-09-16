@@ -23,7 +23,7 @@ class ExcelUpload extends Component
         $this->validate([
             'file' => 'required|file|mimes:xlsx,xls|max:10240', // 10MB
         ]);
-
+        
         // Crear registro de histórico
         $fileRecord = FileUpload::create([
             'user_id' => Auth::id(),
@@ -34,17 +34,16 @@ class ExcelUpload extends Component
         ]);
 
         try {
-
-
             // Marcar como procesando
             $fileRecord->update(['status' => 'processing']);
+            
+            // GUARDAR EL ARCHIVO PERMANENTEMENTE ANTES DE PROCESAR
+            $filePath = $this->file->store('uploads', 'public');
             
             // Contar registros antes de la importación
             $recordsBefore = CustomerInvoice::count();
             
-            // Importar el archivo
             Excel::import(new InvoicesImport, $this->file);
-            
             // Contar registros después de la importación
             $recordsAfter = CustomerInvoice::count();
             $recordsImported = $recordsAfter - $recordsBefore;
@@ -54,6 +53,8 @@ class ExcelUpload extends Component
                 'status' => 'completed',
                 'records_imported' => $recordsImported,
                 'imported_at' => now(),
+                'file_path' => $filePath, // Usar la ruta guardada
+                'stored_filename' => basename($filePath), // Nombre del archivo almacenado
                 'import_summary' => [
                     'total_records' => $recordsImported,
                     'import_date' => now()->toDateTimeString(),

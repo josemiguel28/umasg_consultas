@@ -146,7 +146,7 @@
                 </div>
 
                 <!-- Progress Bar (shown during upload) -->
-                <div wire:loading wire:target="upload" class="space-y-2">
+                <div wire:loading wire:target="file" class="space-y-2">
                     <div class="flex justify-between text-sm">
                         <span class="text-gray-600 dark:text-gray-400">Procesando archivo...</span>
                         <span class="text-blue-600 dark:text-blue-400">0%</span>
